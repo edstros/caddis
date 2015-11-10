@@ -81,7 +81,7 @@ HEADER
   border: 1px solid #F2F2F2;
   outline: none;
   font-family: "adelle", serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-style: italic;
   font-weight: 400;
   width: 175px;
@@ -141,18 +141,19 @@ SIDEBAR
 ===================*/
 
 #sidebar {
-     background-image: url(/img/birds-bg.png);
-  color: white;
-   width: 185px;
+  width: 185px;
   padding: 0;
   float: left;
   margin:15px;
-  overflow: hidden;
+
+}
+.sidebar {
+   background-image: url(/img/birds-bg.png);
+  color: white;
+
 }
 
-
-#sidebar ul li {
-
+.sidebar ul li {
   padding: 5px 10px;
   list-style-type: none;
   margin-left: 0;
@@ -163,16 +164,16 @@ SIDEBAR
   font-size: 1em;
 }
 
-#sidebar ul li a {
+.sidebar ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-#sidebar ul li a:hover {
+.sidebar ul li a:hover {
   /*background-image: url(/img/darkbox.png);*/
 }
 
-#sidebar li span {
+.sidebar li span {
   float: right;
   height: 90%;
 }
@@ -190,7 +191,37 @@ SIDEBAR
   max-height: auto;
   max-width: 120px;
 }
+.underside {
+  width:185px;
+  padding:10px 0;
+  text-align: left;
+}
+.underside img {
+  float:left;
+  padding-right: 10px;
 
+  display: inline-block;
+}
+.underside p {
+  float:left;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+}
+.undersearch {
+  width:185px;
+  height: 10px;
+  text-align: center;
+}
+.spacer {
+  width:185px;
+  height: 10px;
+  text-align: center;
+}
 
 
 /* =================

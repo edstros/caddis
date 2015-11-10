@@ -15,17 +15,18 @@ $(function () { // document ready
   }
 
 });
+
 $(function () {
   // opacity of button set to 0%
-  $(".roll").css("opacity", "0");
+  $('.roll').css('opacity', '0');
 
   // on mouse over
-  $(".roll").hover(function () {
+  $('.roll').hover(function () {
 
       // set opacity to 70%
       $(this).stop().animate({
         opacity: .7
-      }, "fast");
+      }, 'fast');
     },
     // on mouse out
     function () {
@@ -33,18 +34,27 @@ $(function () {
       // set opacity back to 0%
       $(this).stop().animate({
         opacity: 0
-      }, "slow");
+      }, 'slow');
     });
 });
-$(window).scroll(function(){
-     var top = $(this).scrollTop();
-     if(top > 300){
-         $("#searchboxwrapper")
-    .appendTo("#sidebar");
-     }  else {
-       $("#searchboxwrapper")
-    .appendTo("#top-right");
-     }
+$(window).scroll(function () {
+  var top = $(this).scrollTop();
+  if (top > 300) {
+    $('#searchboxwrapper').appendTo('#sidebar');
+    $('.spacer').appendTo('searchboxwrapper');
+    $('#logcart-icons').appendTo('#searchboxwrapper');
+    $('#logcart-icons').css('margin', '10px').css('padding-left', '45px');
+    $('.underside').fadeOut();
+    $('.undersearch').fadeIn();
+  } else {
+    $('#logcart-icons').appendTo('#top-right');
+    $('#logcart-icons').css('margin-top', '0').css('margin-right', '10px').css('padding-left', '0');
+    $('#searchboxwrapper')
+      .appendTo('#top-right');
+
+    $('.underside').fadeIn();
+    $('.undersearch').fadeOut();
+  }
 
 
 });
