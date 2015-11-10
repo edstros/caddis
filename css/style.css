@@ -36,7 +36,7 @@ HEADER
   font-family: "proxima-nova-condensed", sans-serif;
   font-size: 0.9em;
   padding: 20px;
-  padding-left: 200px;
+  padding-left: 225px;
 }
 
 .topbox a {
@@ -102,7 +102,7 @@ HEADER
   right: 0;
   background: none;
   border: none;
-  color: #5d3250;
+  color:  #47423d;
   cursor: hand;
   cursor: pointer;
 }
@@ -146,12 +146,13 @@ SIDEBAR
    width: 185px;
   padding: 0;
   float: left;
+  margin:15px;
   overflow: hidden;
 }
 
 
 #sidebar ul li {
-margin-top:15px;
+
   padding: 5px 10px;
   list-style-type: none;
   margin-left: 0;
@@ -190,16 +191,7 @@ margin-top:15px;
   max-width: 120px;
 }
 
-.side-append {
-  clear:left;
-  float: left;
-  height: 40px;
-    width: 185px;
 
-  margin: 15px;
-
-
-}
 
 /* =================
 CONTENT

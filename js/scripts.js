@@ -40,7 +40,7 @@ $(window).scroll(function(){
      var top = $(this).scrollTop();
      if(top > 300){
          $("#searchboxwrapper")
-    .appendTo(".side-append");
+    .appendTo("#sidebar");
      }  else {
        $("#searchboxwrapper")
     .appendTo("#top-right");
