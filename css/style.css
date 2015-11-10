@@ -1,0 +1,415 @@
+/* ===================
+GLOBAL
+===================   */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "adelle", serif;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #6d645e;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+/* ===================
+HEADER
+===================   */
+
+.topbox {
+  background-color: #eaebe8;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 0.9em;
+  padding: 20px;
+  padding-left: 200px;
+}
+
+.topbox a {
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #6d645e;
+  text-decoration: none;
+}
+
+.topbox a:hover {
+  text-decoration: underline;
+}
+
+#top-right {
+  float: right;
+ margin-top: -10px;
+}
+
+#logreg {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#logcart-icons {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#logcart-icons a:hover span .fa-circle {
+  color: #2b2b2b;
+}
+
+#searchboxwrapper {
+  display: inline-block;
+  position: relative;
+
+}
+
+.searchbox {
+  border: 1px solid #F2F2F2;
+  outline: none;
+  font-family: "adelle", serif;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400;
+  width: 175px;
+  height: 26px;
+  background: #fff;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.searchsubmit {
+  font-family: 'FontAwesome';
+  width: 29px;
+  height: 26px;
+  border: 1px solid none;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: #5d3250;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.page-top {
+  background-image: url(/img/mountains.png);
+  width: 1200px;
+  height: 275px;
+}
+
+.page-top h1 {
+  margin-top: 80px;
+  margin-left: 350px;
+  position: absolute;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  color: white;
+}
+
+.page-top p {
+  margin-top: 150px;
+  margin-left: 350px;
+  position: absolute;
+  width: 350px;
+  font-family: "adelle", serif;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: white;
+}
+
+
+/*=============
+SIDEBAR
+===================*/
+
+#sidebar {
+     background-image: url(/img/birds-bg.png);
+  color: white;
+   width: 185px;
+  padding: 0;
+  float: left;
+  overflow: hidden;
+}
+
+
+#sidebar ul li {
+margin-top:15px;
+  padding: 5px 10px;
+  list-style-type: none;
+  margin-left: 0;
+  border-top: white 1px solid;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+  /*background-image: url(/img/darkbox.png);*/
+}
+
+#sidebar li span {
+  float: right;
+  height: 90%;
+}
+
+.logo-sidebar {
+  background-color: #47423d;
+  width: 145px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.logo-sidebar img {
+  max-height: auto;
+  max-width: 120px;
+}
+
+.side-append {
+  clear:left;
+  float: left;
+  height: 40px;
+    width: 185px;
+
+  margin: 15px;
+
+
+}
+
+/* =================
+CONTENT
+==================== */
+
+.page-content {
+  margin: 0 20px 40px 250px;
+  width: 575px;
+}
+
+.page-content-header {
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  padding-bottom: 1em;
+  margin: 50px 20px 0 250px;
+  width: 950px;
+}
+
+.page-content p {
+  font-family: "adelle", serif;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 1.6em;
+  color: #6d645e;
+}
+
+.photo {
+  font-family: "adelle", serif;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  width: 286px;
+  margin: 0 40px;
+  float: right;
+}
+
+
+/* =================
+MEET THE FLOCK
+==================== */
+
+#flock {
+  width: 1200px;
+  background-color: #eaebe8;
+  padding: 25px 0;
+}
+
+.flock-container {
+  width: 1000px;
+  margin-left: 200px;
+}
+
+.flock-container h3 {
+  text-align: center;
+  margin: 20px auto;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #6d645e;
+  max-width: 200px;
+}
+
+.flock-container ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 12px;
+}
+
+
+/*.flock-container ul li img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}*/
+
+.fa-circle-thinner {
+  font-size: 6.5em;
+  box-sizing: border-box;
+  display: block;
+  width: 2em;
+  height: 2em;
+  padding-top: 0.3em;
+  text-align: center;
+  border-radius: 100%;
+  border: 0px solid white;
+}
+
+span.roll {
+  background: center center no-repeat #999;
+  height: 173px;
+  position: absolute;
+  text-align: center;
+  line-height: 153px;
+  width: 173px;
+  border-radius: 100%;
+  border: 0 solid #ffffff;
+  z-index: 10;
+}
+
+.roll:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #ffffff;
+  font-size: 40px;
+  position: absolute;
+  top: 8px;
+  left: 67px;
+}
+
+.flock-names {
+  color: #608c48;
+  font-family: "proxima-nova-condensed", sans-serif;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 900;
+  width: 170px;
+  margin-top: 10px;
+}
+
+.flock-detail {
+  color: #6d645e;
+  font-family: "adelle", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1em;
+  width: 170px;
+  margin-bottom: 10px;
+}
+
+
+/* ===================
+FOOTER
+====================*/
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #47423d;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.links {
+  text-align: center;
+  font-family: "proxima-nova-condensed", sans-serif;
+  color: white;
+}
+
+.links a {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.logo-footer img {
+  max-height: 60px;
+  max-width: auto;
+  margin: auto 40px;
+  ;
+}
+
+.tagline {
+  font-family: "adelle", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: .8em;
+  color: white;
+}
+
+.tagline img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icons a,
+a:hover {
+  color: #74b358;
+}
+
+.caddis {
+  margin: 0 15px;
+}
+
+ul.social {
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.social li {
+  display: inline-block;
+  margin: 2px;
+  margin-top: -10px;
+}
+
+ul.social li a:hover span .fa-circle {
+  color: #2b2b2b;
+}
