@@ -1,4 +1,8 @@
 $(function () { // document ready
+/*================
+STICKY SIDEBAR
+  */
+
   if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
     var stickyTop = $('.sticky').offset().top; // returns number
     $(window).scroll(function () { // scroll event
@@ -14,10 +18,19 @@ $(function () { // document ready
     });
   }
 
-});
+  /*=================
+  SIDEBAR MENU WITH JQUERY UI
+  */
 
-$(function () {
-  // opacity of button set to 0%
+   $( "#menu" ).menu();
+
+  });
+
+/*=====================
+ROLLOVER EFFECT ON ROUND IMAGES
+*/
+
+// opacity of button set to 0%
   $('.roll').css('opacity', '0');
 
   // on mouse over
@@ -36,7 +49,11 @@ $(function () {
         opacity: 0
       }, 'slow');
     });
-});
+/*======================
+MOVE SEARCH BAR FROM TOP RIGHT
+TO UNDER SIDEBAR AND BACK AGAIN
+*/
+
 $(window).scroll(function () {
   var top = $(this).scrollTop();
   if (top > 300) {

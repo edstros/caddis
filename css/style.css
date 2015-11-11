@@ -54,7 +54,7 @@ HEADER
 
 #top-right {
   float: right;
- margin-top: -10px;
+  margin-top: -10px;
 }
 
 #logreg {
@@ -74,7 +74,6 @@ HEADER
 #searchboxwrapper {
   display: inline-block;
   position: relative;
-
 }
 
 .searchbox {
@@ -102,7 +101,7 @@ HEADER
   right: 0;
   background: none;
   border: none;
-  color:  #47423d;
+  color: #47423d;
   cursor: hand;
   cursor: pointer;
 }
@@ -114,7 +113,7 @@ HEADER
 }
 
 .page-top h1 {
-  margin-top: 80px;
+  margin-top: 85px;
   margin-left: 350px;
   position: absolute;
   font-family: "proxima-nova-condensed", sans-serif;
@@ -133,6 +132,7 @@ HEADER
   font-size: 1.2em;
   font-weight: 200;
   color: white;
+  z-index: 1;
 }
 
 
@@ -140,37 +140,86 @@ HEADER
 SIDEBAR
 ===================*/
 
+#menu ul li a:hover {
+  background-color: #608c48;
+}
+
 #sidebar {
   width: 185px;
   padding: 0;
   float: left;
-  margin:15px;
-
+  margin: 15px;
+  z-index: 10;
 }
+
 .sidebar {
-   background-image: url(/img/birds-bg.png);
+  background-image: url(/img/birds-bg.png);
   color: white;
+  display: block;
 
 }
 
-.sidebar ul li {
+.sidebar > ul > li {
+  clear: left;
+  position: relative;
   padding: 5px 10px;
   list-style-type: none;
-  margin-left: 0;
-  border-top: white 1px solid;
+  border-top: gray 1px solid;
   font-family: "proxima-nova-condensed", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1em;
+  display: block;
+}
+/*.sidebar > ul > li:hover {
+
+  border-top: gray 1px solid;
+
+}*/
+
+.sidebar > ul > li ul {
+  display: hidden;
+
+}
+
+.sidebar > ul > li:hover ul {
+   font-family: "proxima-nova-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  display: block;
+  background-color: #608c48;
+ margin: 5px 10px;
+  position: absolute;
+}
+
+.sidebar > ul > li ul {
+  position: absolute;
+  top: 0;
+  width: 275px;
+  list-style-type: none;
+
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  display:block;
+
+   margin: 5px 10px;
+  background-color: #608c48;
+}
+
+
+
+.sidebar > ul > li ul li {
+  display: block;
+    padding: 5px 10px;
+  z-index: 30;
 }
 
 .sidebar ul li a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  /*background-image: url(/img/darkbox.png);*/
 }
 
 .sidebar li span {
@@ -184,41 +233,44 @@ SIDEBAR
   padding: 20px;
   margin: auto;
   text-align: center;
-
 }
 
 .logo-sidebar img {
   max-height: auto;
   max-width: 120px;
 }
+
 .underside {
-  width:185px;
-  padding:10px 0;
+  width: 185px;
+  padding: 10px 0;
   text-align: left;
 }
-.underside img {
-  float:left;
-  padding-right: 10px;
 
+.underside img {
+  float: left;
+  padding-right: 10px;
   display: inline-block;
 }
+
 .underside p {
-  float:left;
+  float: left;
   font-family: "proxima-nova-condensed", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1em;
-display: inline-block;
+  display: inline-block;
   width: 100px;
   margin-top: 20px;
 }
+
 .undersearch {
-  width:185px;
+  width: 185px;
   height: 10px;
   text-align: center;
 }
+
 .spacer {
-  width:185px;
+  width: 185px;
   height: 10px;
   text-align: center;
 }
@@ -295,24 +347,6 @@ MEET THE FLOCK
   margin: 12px;
 }
 
-
-/*.flock-container ul li img:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-}*/
-
-.fa-circle-thinner {
-  font-size: 6.5em;
-  box-sizing: border-box;
-  display: block;
-  width: 2em;
-  height: 2em;
-  padding-top: 0.3em;
-  text-align: center;
-  border-radius: 100%;
-  border: 0px solid white;
-}
-
 span.roll {
   background: center center no-repeat #999;
   height: 173px;
@@ -329,7 +363,7 @@ span.roll {
   content: "\f002";
   font-family: FontAwesome;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: inherit;
   /*--adjust as necessary--*/
   color: #ffffff;
@@ -369,7 +403,7 @@ footer {
   width: 1200px;
   margin: 0 auto;
   background-color: #47423d;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   text-align: center;
   padding: 25px 0;
 }
