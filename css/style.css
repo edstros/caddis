@@ -26,9 +26,8 @@ body {
   height: auto;
 }
 
-
 /* ===================
-HEADER
+T0P OF PAGE
 ===================   */
 
 .topbox {
@@ -156,7 +155,6 @@ SIDEBAR
   background-image: url(/img/birds-bg.png);
   color: white;
   display: block;
-
 }
 
 .sidebar > ul > li {
@@ -171,25 +169,20 @@ SIDEBAR
   font-size: 1em;
   display: block;
 }
-/*.sidebar > ul > li:hover {
 
-  border-top: gray 1px solid;
-
-}*/
 
 .sidebar > ul > li ul {
   display: hidden;
-
 }
 
 .sidebar > ul > li:hover ul {
-   font-family: "proxima-nova-condensed", sans-serif;
+  font-family: "proxima-nova-condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
   display: block;
   background-color: #608c48;
- margin: 5px 10px;
+  margin: 5px 10px;
   position: absolute;
 }
 
@@ -198,22 +191,18 @@ SIDEBAR
   top: 0;
   width: 275px;
   list-style-type: none;
-
   font-family: "proxima-nova-condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  display:block;
-
-   margin: 5px 10px;
+  display: block;
+  margin: 5px 10px;
   background-color: #608c48;
 }
 
-
-
 .sidebar > ul > li ul li {
   display: block;
-    padding: 5px 10px;
+  padding: 5px 10px;
   z-index: 30;
 }
 
@@ -222,10 +211,12 @@ SIDEBAR
   text-decoration: none;
 }
 
+/*--positions the arrow image--*/
 .sidebar li span {
   float: right;
   height: 90%;
 }
+
 
 .logo-sidebar {
   background-color: #47423d;
@@ -347,32 +338,6 @@ MEET THE FLOCK
   margin: 12px;
 }
 
-span.roll {
-  background: center center no-repeat #999;
-  height: 173px;
-  position: absolute;
-  text-align: center;
-  line-height: 153px;
-  width: 173px;
-  border-radius: 100%;
-  border: 0 solid #ffffff;
-  z-index: 10;
-}
-
-.roll:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: inherit;
-  /*--adjust as necessary--*/
-  color: #ffffff;
-  font-size: 40px;
-  position: absolute;
-  top: 8px;
-  left: 67px;
-}
-
 .flock-names {
   color: #608c48;
   font-family: "proxima-nova-condensed", sans-serif;
@@ -392,6 +357,34 @@ span.roll {
   font-size: 1em;
   width: 170px;
   margin-bottom: 10px;
+}
+
+
+/*--rollover effect--*/
+
+span.roll {
+  background: center center no-repeat #999;
+  height: 173px;
+  position: absolute;
+  text-align: center;
+  line-height: 153px;
+  width: 173px;
+  border-radius: 100%;
+  border: 0 solid #ffffff;
+  z-index: 10;
+}
+
+.roll:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  color: #ffffff;
+  font-size: 40px;
+  position: absolute;
+  top: 8px;
+  left: 67px;
 }
 
 
@@ -429,7 +422,7 @@ footer {
   max-height: 60px;
   max-width: auto;
   margin: auto 40px;
-  ;
+
 }
 
 .tagline {
