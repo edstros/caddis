@@ -8,10 +8,7 @@ GLOBAL
 }
 
 body {
-  font-family: "adelle", serif;
-  font-size: 0.8em;
-  font-style: normal;
-  font-weight: 400;
+  font: normal 400 0.8em/150% "adelle", "Georgia", serif;
   background-color: #ffffff;
   color: #6d645e;
 }
@@ -31,9 +28,8 @@ T0P OF PAGE
 ===================   */
 
 .topbox {
+  font: normal 400 0.9em "proxima-nova-condensed", "Arial Narrow" sans-serif;
   background-color: #eaebe8;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 0.9em;
   padding: 20px;
   padding-left: 225px;
 }
@@ -101,18 +97,17 @@ T0P OF PAGE
   background: none;
   border: none;
   color: #47423d;
-  cursor: hand;
   cursor: pointer;
 }
 
 .page-top {
-  background-image: url("/img/mountains.png");
-  width: 1200px;
+  background-image: url("/img/mountains.jpg");
+  width: 100%;
   height: 275px;
 }
 
 .page-top h1 {
-  margin-top: 85px;
+  margin-top: 105px;
   margin-left: 350px;
   position: absolute;
   font-family: "proxima-nova-condensed", sans-serif;
@@ -121,7 +116,7 @@ T0P OF PAGE
   color: white;
 }
 
-.page-top p {
+.page-top div {
   margin-top: 150px;
   margin-left: 350px;
   position: absolute;
@@ -131,7 +126,7 @@ T0P OF PAGE
   font-size: 1.2em;
   font-weight: 200;
   color: white;
-  z-index: 1;
+
 }
 
 
@@ -141,6 +136,7 @@ SIDEBAR
 
 #menu ul li a:hover {
   background-color: #608c48;
+
 }
 
 #sidebar {
@@ -152,7 +148,7 @@ SIDEBAR
 }
 
 .sidebar {
-  background-image: url("/img/birds-bg.png");
+  background-image: url("/img/birds-bg.jpg");
   color: white;
   display: block;
 }
@@ -162,12 +158,11 @@ SIDEBAR
   position: relative;
   padding: 5px 10px;
   list-style-type: none;
-  border-top: gray 1px solid;
   font-family: "proxima-nova-condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  display: block;
+
 }
 
 
@@ -183,7 +178,7 @@ SIDEBAR
   display: block;
   background-color: #608c48;
   margin: 5px 10px;
-  position: absolute;
+  position: absolute;  z-index: 900;
 }
 
 .sidebar > ul > li ul {
@@ -198,6 +193,7 @@ SIDEBAR
   display: block;
   margin: 5px 10px;
   background-color: #608c48;
+  display: none;
 }
 
 .sidebar > ul > li ul li {
@@ -312,14 +308,17 @@ MEET THE FLOCK
 ==================== */
 
 #flock {
-  width: 1200px;
+  width: 100%;
   background-color: #eaebe8;
   padding: 25px 0;
 }
 
 .flock-container {
-  width: 1000px;
-  margin-left: 200px;
+  width: 83%;
+  margin-left: 17%;
+}.flock-container img {
+  border-radius: 7em;
+
 }
 
 .flock-container h3 {

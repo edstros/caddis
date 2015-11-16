@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us | Duckhole</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="//use.typekit.net/ruk6qhs.js"></script>
+  <script>
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
   <link rel="stylesheet" href="/css/jquery-ui.theme.css">
   <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -12,7 +19,7 @@
 <body>
   <div class="container">
     <div id="sidebar" class="caps sticky">
-      <nav class="sidebar">
+      <nav class="sidebar" role="navigation">
         <div class="logo-sidebar">
           <a href="#"><img src="/img/duckhole_logo_sidebar.png" alt="Duckhole logo"></a>
         </div>
@@ -37,7 +44,8 @@
               <li>Shooting Accessories<span><img src="/img/arrow_nav.png"></span></li>
               <li>Shooting Benches, Mats, Rests &amp; Bags<span><img src="/img/arrow_nav.png"></span></li>
               <li>Shooting Glasses<span><img src="/img/arrow_nav.png"></span></li>
-            </ul></li>
+            </ul>
+          </li>
 
           <li>Clothes<span><img src="/img/arrow_nav.png"></span></li>
           <li>Shoes &amp; Boots<span><img src="/img/arrow_nav.png"></span></li>
@@ -51,7 +59,7 @@
       <div class="underside"><img src="/img/email_icon.png" alt="email icon">
         <p class="caps">subscribe to receive updates</p>
       </div>
-      <div class="undersearch"></div>
+
     </div>
     <div class="topbox caps">
       <a href="#">home</a>&nbsp; /&nbsp; <a href="#">contact us</a>
@@ -85,11 +93,11 @@
     </div>
     <header class="page-top">
       <h1 class="caps">About Us</h1>
-      <p>Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod. </p>
+      <div>Ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod. </div>
     </header>
     <section>
       <h2 class="caps page-content-header">We want to give you the best</h2>
-      <figure class="photo"><img src="/img/twoguys.png">
+      <figure class="photo"><img src="/img/twoguys.jpg" alt="two guys">
         <figcaption>
           <p>Qui facit eorum claritatem Investigationes demonstraverunt lectores legere?</p>
         </figcaption>
@@ -109,7 +117,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jim.png" alt="Jim Sturgess"></a>
+              <a href="#"><img src="/img/flock_jim.jpg" alt="Jim Sturgess"></a>
               <figcaption class="flock-names caps">Jim Sturgess</figcaption>
               <figcaption class="flock-detail">Deep Sea Fishing</figcaption>
             </figure>
@@ -117,7 +125,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jenny.png" alt="Jenny Tiller"></a>
+              <a href="#"><img src="/img/flock_jenny.jpg" alt="Jenny Tiller"></a>
               <figcaption class="flock-names caps">Jenny Tiller</figcaption>
               <figcaption class="flock-detail">Turkey, Whitetail</figcaption>
             </figure>
@@ -125,7 +133,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_mark.png" alt="Mark Howland"></a>
+              <a href="#"><img src="/img/flock_mark.jpg" alt="Mark Howland"></a>
               <figcaption class="flock-names caps">Mark Howland</figcaption>
               <figcaption class="flock-detail">Whitetail, Big Game</figcaption>
             </figure>
@@ -133,7 +141,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_sara.png" alt="Sara Wenner"></a>
+              <a href="#"><img src="/img/flock_sara.jpg" alt="Sara Wenner"></a>
               <figcaption class="flock-names caps">Sara Wenner</figcaption>
               <figcaption class="flock-detail">Predators, Turkey</figcaption>
             </figure>
@@ -141,7 +149,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_allen.png" alt="Allen Johnson"></a>
+              <a href="#"><img src="/img/flock_allen.jpg" alt="Allen Johnson"></a>
               <figcaption class="flock-names caps">Allen Johnson</figcaption>
               <figcaption class="flock-detail">Big Game, Trapping</figcaption>
             </figure>
@@ -151,7 +159,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jim.png" alt="Jim Sturgess"></a>
+              <a href="#"><img src="/img/flock_jim.jpg" alt="Jim Sturgess"></a>
               <figcaption class="flock-names caps">Jim Sturgess</figcaption>
               <figcaption class="flock-detail">Deep Sea Fishing</figcaption>
             </figure>
@@ -159,7 +167,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jenny.png" alt="Jenny Tiller"></a>
+              <a href="#"><img src="/img/flock_jenny.jpg" alt="Jenny Tiller"></a>
               <figcaption class="flock-names caps">Jenny Tiller</figcaption>
               <figcaption class="flock-detail">Turkey, Whitetail</figcaption>
             </figure>
@@ -167,7 +175,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_mark.png" alt="Mark Howland"></a>
+              <a href="#"><img src="/img/flock_mark.jpg" alt="Mark Howland"></a>
               <figcaption class="flock-names caps">Mark Howland</figcaption>
               <figcaption class="flock-detail">Whitetail, Big Game</figcaption>
             </figure>
@@ -175,7 +183,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_sara.png" alt="Sara Wenner"></a>
+              <a href="#"><img src="/img/flock_sara.jpg" alt="Sara Wenner"></a>
               <figcaption class="flock-names caps">Sara Wenner</figcaption>
               <figcaption class="flock-detail">Predators, Turkey</figcaption>
             </figure>
@@ -183,7 +191,7 @@
           <li>
             <figure>
               <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_allen.png" alt="Allen Johnson"></a>
+              <a href="#"><img src="/img/flock_allen.jpg" alt="Allen Johnson"></a>
               <figcaption class="flock-names caps">Allen Johnson</figcaption>
               <figcaption class="flock-detail">Big Game, Trapping</figcaption>
             </figure>
@@ -194,7 +202,7 @@
   </div>
   <footer>
     <div class="logo-footer links">
-      <a href="#"><img src="/img/duckhole_logo_footer.png"></a> <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Legal</a></div>
+      <a href="#"><img src="/img/duckhole_logo_footer.png" alt="footer duckhole logo"></a> <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Legal</a></div>
     <section class="icons">
       <ul class="social">
         <li>
@@ -224,16 +232,12 @@
       </section>
     </section>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
   <script src="/js/scripts.js"></script>
-  <script src="//use.typekit.net/ruk6qhs.js"></script>
-  <script>
-    try {
-      Typekit.load();
-    } catch (e) {}
-  </script>
+
+
 </body>
 
 </html>
