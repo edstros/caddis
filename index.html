@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us | Duckhole</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
   <script src="//use.typekit.net/ruk6qhs.js"></script>
   <script>
     try {
@@ -62,9 +62,9 @@
 
     </div>
     <div class="topbox caps">
-      <a href="#">home</a>&nbsp; /&nbsp; <a href="#">contact us</a>
+      <a href="#"><span class="rightpad">home</span></a>/<a href="#"><span class="leftpad">contact us</span></a>
       <div id="top-right">
-        <div id="logreg" class="caps"><a href="#">Login</a>&nbsp; /&nbsp; <a href="#">Register</a></div>
+        <div id="logreg" class="caps"><a href="#"><span class="rightpad">Login</span></a>/<a href="#"><span class="leftpad">Register</span></a></div>
         <div id="logcart-icons" class="icons">
           <a href="#">
             <span class="fa-stack fa-lg">
@@ -114,87 +114,58 @@
       <section class="flock-container">
         <h3 class="caps">Meet the flock</h3>
         <ul>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jim.jpg" alt="Jim Sturgess"></a>
-              <figcaption class="flock-names caps">Jim Sturgess</figcaption>
-              <figcaption class="flock-detail">Deep Sea Fishing</figcaption>
-            </figure>
+          <li class="picholder">
+
+            <a href="#"><img class="flock-pic" src="/img/flock_jim.jpg" alt="Jim Sturgess"><span class="overlay"></span></a>
+              <div class="flock-names caps">Jim Sturgess</div>
+              <div class="flock-detail">Deep Sea Fishing</div>
+
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jenny.jpg" alt="Jenny Tiller"></a>
-              <figcaption class="flock-names caps">Jenny Tiller</figcaption>
-              <figcaption class="flock-detail">Turkey, Whitetail</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_jenny.jpg" alt="Jenny Tiller"><span class="overlay"></span></a>
+              <div class="flock-names caps">Jenny Tiller</div>
+              <div class="flock-detail">Turkey, Whitetail</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_mark.jpg" alt="Mark Howland"></a>
-              <figcaption class="flock-names caps">Mark Howland</figcaption>
-              <figcaption class="flock-detail">Whitetail, Big Game</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_mark.jpg" alt="Mark Howland"><span class="overlay"></span></a>
+              <div class="flock-names caps">Mark Howland</div>
+              <div class="flock-detail">Whitetail, Big Game</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_sara.jpg" alt="Sara Wenner"></a>
-              <figcaption class="flock-names caps">Sara Wenner</figcaption>
-              <figcaption class="flock-detail">Predators, Turkey</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_sara.jpg" alt="Sara Wenner"><span class="overlay"></span></a>
+              <div class="flock-names caps">Sara Wenner</div>
+              <div class="flock-detail">Predators, Turkey</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_allen.jpg" alt="Allen Johnson"></a>
-              <figcaption class="flock-names caps">Allen Johnson</figcaption>
-              <figcaption class="flock-detail">Big Game, Trapping</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_allen.jpg" alt="Allen Johnson"><span class="overlay"></span></a>
+              <div class="flock-names caps">Allen Johnson</div>
+              <div class="flock-detail">Big Game, Trapping</div>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jim.jpg" alt="Jim Sturgess"></a>
-              <figcaption class="flock-names caps">Jim Sturgess</figcaption>
-              <figcaption class="flock-detail">Deep Sea Fishing</figcaption>
-            </figure>
+
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_jim.jpg" alt="Jim Sturgess"><span class="overlay"></span></a>
+              <div class="flock-names caps">Jim Sturgess</div>
+              <div class="flock-detail">Deep Sea Fishing</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_jenny.jpg" alt="Jenny Tiller"></a>
-              <figcaption class="flock-names caps">Jenny Tiller</figcaption>
-              <figcaption class="flock-detail">Turkey, Whitetail</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_jenny.jpg" alt="Jenny Tiller"><span class="overlay"></span></a>
+              <div class="flock-names caps">Jenny Tiller</div>
+              <div class="flock-detail">Turkey, Whitetail</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_mark.jpg" alt="Mark Howland"></a>
-              <figcaption class="flock-names caps">Mark Howland</figcaption>
-              <figcaption class="flock-detail">Whitetail, Big Game</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_mark.jpg" alt="Mark Howland"><span class="overlay"></span></a>
+              <div class="flock-names caps">Mark Howland</div>
+              <div class="flock-detail">Whitetail, Big Game</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_sara.jpg" alt="Sara Wenner"></a>
-              <figcaption class="flock-names caps">Sara Wenner</figcaption>
-              <figcaption class="flock-detail">Predators, Turkey</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_sara.jpg" alt="Sara Wenner"><span class="overlay"></span></a>
+              <div class="flock-names caps">Sara Wenner</div>
+              <div class="flock-detail">Predators, Turkey</div>
           </li>
-          <li>
-            <figure>
-              <span class="roll "> </span>
-              <a href="#"><img src="/img/flock_allen.jpg" alt="Allen Johnson"></a>
-              <figcaption class="flock-names caps">Allen Johnson</figcaption>
-              <figcaption class="flock-detail">Big Game, Trapping</figcaption>
-            </figure>
+          <li class="picholder">
+              <a href="#"><img class="flock-pic" src="/img/flock_allen.jpg" alt="Allen Johnson"><span class="overlay"></span></a>
+              <div class="flock-names caps">Allen Johnson</div>
+              <div class="flock-detail">Big Game, Trapping</div>
           </li>
         </ul>
       </section>
@@ -233,7 +204,7 @@
     </section>
   </footer>
 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
   <script src="/js/scripts.js"></script>
 

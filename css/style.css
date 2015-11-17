@@ -1,6 +1,6 @@
-/* ===================
+/* ===============
 GLOBAL
-===================   */
+======================================   */
 
 * {
   margin: 0;
@@ -18,14 +18,16 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   height: auto;
+  background-repeat: no-repeat;
 }
 
-/* ===================
+
+/* ================
 T0P OF PAGE
-===================   */
+=====================================   */
 
 .topbox {
   font: normal 400 0.9em "proxima-nova-condensed", "Arial Narrow" sans-serif;
@@ -41,6 +43,14 @@ T0P OF PAGE
   font-size: 1em;
   color: #6d645e;
   text-decoration: none;
+}
+
+.rightpad {
+  padding-right: 5px;
+}
+
+.leftpad {
+  padding-left: 5px;
 }
 
 .topbox a:hover {
@@ -126,17 +136,15 @@ T0P OF PAGE
   font-size: 1.2em;
   font-weight: 200;
   color: white;
-
 }
 
 
 /*=============
 SIDEBAR
-===================*/
+==========================================*/
 
 #menu ul li a:hover {
   background-color: #608c48;
-
 }
 
 #sidebar {
@@ -162,9 +170,7 @@ SIDEBAR
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-
 }
-
 
 .sidebar > ul > li ul {
   display: hidden;
@@ -178,7 +184,8 @@ SIDEBAR
   display: block;
   background-color: #608c48;
   margin: 5px 10px;
-  position: absolute;  z-index: 900;
+  position: absolute;
+  z-index: 900;
 }
 
 .sidebar > ul > li ul {
@@ -207,12 +214,13 @@ SIDEBAR
   text-decoration: none;
 }
 
+
 /*--positions the arrow image--*/
+
 .sidebar li span {
   float: right;
   height: 90%;
 }
-
 
 .logo-sidebar {
   background-color: #47423d;
@@ -265,7 +273,7 @@ SIDEBAR
 
 /* =================
 CONTENT
-==================== */
+============================================ */
 
 .page-content {
   margin: 0 20px 40px 250px;
@@ -305,7 +313,7 @@ CONTENT
 
 /* =================
 MEET THE FLOCK
-==================== */
+=============================================== */
 
 #flock {
   width: 100%;
@@ -316,9 +324,6 @@ MEET THE FLOCK
 .flock-container {
   width: 83%;
   margin-left: 17%;
-}.flock-container img {
-  border-radius: 7em;
-
 }
 
 .flock-container h3 {
@@ -331,10 +336,39 @@ MEET THE FLOCK
   max-width: 200px;
 }
 
-.flock-container ul li {
+.flock-container > ul > li {
+  position: relative;
+  height: 173px;
+  width: 173px;
   list-style-type: none;
   display: inline-block;
   margin: 11px;
+}
+
+.flock-container ul li img {
+  border-radius: 50%;
+}
+
+.picholder:hover .overlay {
+  opacity: 1;
+}
+
+.picholder:hover .flock-pic {
+  opacity: .85;
+}
+
+.overlay {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 39px;
+  width: 39px;
+  margin: auto;
+  background-image: url(/img/search.png);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .flock-names {
@@ -361,7 +395,8 @@ MEET THE FLOCK
 
 /*--rollover effect--*/
 
-span.roll {
+
+/*span.roll {
   background: center center no-repeat #999;
   height: 173px;
   position: absolute;
@@ -384,15 +419,15 @@ span.roll {
   position: absolute;
   top: 8px;
   left: 67px;
-}
+}*/
 
 
 /* ===================
 FOOTER
-====================*/
+====================================================*/
 
 footer {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #47423d;
   margin-bottom: 10px;
@@ -421,7 +456,6 @@ footer {
   max-height: 60px;
   max-width: auto;
   margin: auto 40px;
-
 }
 
 .tagline {

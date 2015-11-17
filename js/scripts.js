@@ -4,7 +4,7 @@
   var $searchwrap = $('#searchboxwrapper');
   var $underside = $('.underside');
   var $undersearch = $('.undersearch');
-  var $roll = $('.roll');
+/*  var $roll = $('.roll');*/
 
   $(function () { // document ready
     /*================
@@ -69,7 +69,7 @@
     /*=============================
     ROLLOVER EFFECT ON ROUND IMAGES
     ===============================*/
-    // opacity of button set to 0%
+/*    // opacity of button set to 0%
     $roll.css('opacity', '0');
     // on mouse over
     $roll.hover(function () {
@@ -84,5 +84,5 @@
         $(this).stop().animate({
           opacity: 0
         }, 'slow');
-      });
+      });*/
   });
