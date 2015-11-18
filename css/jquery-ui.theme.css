@@ -33,7 +33,7 @@
 }
 
 .ui-widget-content {
-  background: #ffffff;
+  background: #fff;
   color: #333;
 }
 
@@ -44,12 +44,12 @@
 .ui-widget-header {
 
   background: #cccccc /*url("images/ui-bg_highlight-soft_0_cccccc_1x100.png")*/ 50% 50% repeat-x;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 
 .ui-widget-header a {
-  color: #ffffff;
+  color: #fff;
 }
 
 
@@ -83,6 +83,7 @@
   background: #74b358 /*url("images/ui-bg_glass_75_74b358_1x400.png")*/ 50% 50% repeat-x;
   font-weight: normal;
   color: #fff;
+
 }
 
 .ui-state-hover a,
@@ -103,13 +104,13 @@
   border-top: 1px solid #ccc;
   background: #608c48 /*url("images/ui-bg_glass_75_608c48_1x400.png")*/ 50% 50% repeat-x;
   font-weight: 400;
-  color: #212121;
+  color: /*#212121;*/#fff;
 }
 
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-  color: #212121;
+  color: /*#212121*/#fff;
   text-decoration: none;
 }
 
@@ -122,13 +123,13 @@
 .ui-widget-header .ui-state-highlight {
   border: 0 solid #fcefa1;
   background: #fbf9ee /*url("images/ui-bg_glass_55_fbf9ee_1x400.png")*/ 50% 50% repeat-x;
-  color: #363636;
+  color: /*#363636;*/#fff;
 }
 
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-  color: #363636;
+  color: /*#363636;*/#fff;
 }
 
 
@@ -187,12 +188,15 @@
 
 
 /* states and images */
-
+.ui-menu-icon, .ui-icon-carat-1-e,
 .ui-icon {
-  width: 16px;
-  height: 16px;
+  width: 0;
+  height: 0;
+  display: none;
 }
-
+#ui-id-4{
+  margin-left:-2px;
+}
 
 /*.ui-icon,
 .ui-widget-content .ui-icon {

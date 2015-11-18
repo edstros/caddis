@@ -1,4 +1,4 @@
-/* ===============
+/* =====
 GLOBAL
 ======================================   */
 
@@ -8,7 +8,7 @@ GLOBAL
 }
 
 body {
-  font: normal 400 0.8em/150% "adelle", "Georgia", serif;
+  font: 400 0.8em/150% "adelle", "Georgia", serif;
   background-color: #ffffff;
   color: #6d645e;
 }
@@ -25,22 +25,19 @@ body {
 }
 
 
-/* ================
+/* =====
 T0P OF PAGE
 =====================================   */
 
 .topbox {
-  font: normal 400 0.9em "proxima-nova-condensed", "Arial Narrow" sans-serif;
+  font: 400 0.9em "proxima-nova-condensed", "Arial Narrow" sans-serif;
   background-color: #eaebe8;
   padding: 20px;
   padding-left: 225px;
 }
 
 .topbox a {
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
+  font: 400 1em "proxima-nova-condensed", sans-serif;
   color: #6d645e;
   text-decoration: none;
 }
@@ -57,26 +54,39 @@ T0P OF PAGE
   text-decoration: underline;
 }
 
-#top-right {
+.top-right {
   float: right;
   margin-top: -10px;
 }
 
-#logreg {
+.logreg {
   display: inline-block;
   margin: 0 5px;
 }
 
-#logcart-icons {
+.logcart {
   display: inline-block;
+  position: relative;
+  color: #fff;
   margin: 0 5px;
 }
 
-#logcart-icons a:hover span .fa-circle {
-  color: #2b2b2b;
+.logcart-icon a {
+  display: inline-block;
+  margin: auto 5px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #608c48;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
 }
 
-#searchboxwrapper {
+.logcart-icon a:hover {
+  background-color: #47423d;
+}
+
+.searchboxwrapper {
   display: inline-block;
   position: relative;
 }
@@ -84,10 +94,7 @@ T0P OF PAGE
 .searchbox {
   border: 1px solid #F2F2F2;
   outline: none;
-  font-family: "adelle", serif;
-  font-size: 0.9em;
-  font-style: italic;
-  font-weight: 400;
+  font: italic 400 0.9em "adelle", "Georgia", serif;
   width: 175px;
   height: 26px;
   background: #fff;
@@ -96,11 +103,10 @@ T0P OF PAGE
 }
 
 .searchsubmit {
-  font-family: 'FontAwesome';
+  font: 16px 'Fontello';
   width: 29px;
   height: 26px;
   border: 1px solid none;
-  font-size: 16px;
   position: absolute;
   top: 0;
   right: 0;
@@ -114,37 +120,37 @@ T0P OF PAGE
   background-image: url("/img/mountains.jpg");
   width: 100%;
   height: 275px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .page-top h1 {
   margin-top: 105px;
   margin-left: 350px;
   position: absolute;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 5em;
-  font-weight: 900;
+  font: 900 5em "proxima-nova-condensed", sans-serif;
   color: white;
 }
 
 .page-top div {
-  margin-top: 150px;
+  margin-top: 180px;
   margin-left: 350px;
   position: absolute;
   width: 350px;
-  font-family: "adelle", serif;
-  font-style: italic;
-  font-size: 1.2em;
-  font-weight: 200;
+  font: italic 200 1.2em "adelle", "Georgia", serif;
   color: white;
 }
 
 
-/*=============
+/*=====
 SIDEBAR
 ==========================================*/
 
-#menu ul li a:hover {
-  background-color: #608c48;
+.menu ul li a:hover {
+  background-color: none;
+  color: #fff;
+  text-decoration: none;
+  display: block;
 }
 
 #sidebar {
@@ -158,68 +164,64 @@ SIDEBAR
 .sidebar {
   background-image: url("/img/birds-bg.jpg");
   color: white;
-  display: block;
 }
 
 .sidebar > ul > li {
   clear: left;
   position: relative;
   padding: 5px 10px;
-  list-style-type: none;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
-}
-
-.sidebar > ul > li ul {
-  display: hidden;
-}
-
-.sidebar > ul > li:hover ul {
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
+  font: 400 1em "proxima-nova-condensed", sans-serif;
+  height: 1.4em;
+  color: #fff;
   display: block;
-  background-color: #608c48;
-  margin: 5px 10px;
-  position: absolute;
-  z-index: 900;
 }
 
-.sidebar > ul > li ul {
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar > ul > li > ul {
   position: absolute;
   top: 0;
   width: 275px;
   list-style-type: none;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
-  display: block;
+  font: 400 1em "proxima-nova-condensed", sans-serif;
   margin: 5px 10px;
   background-color: #608c48;
+  z-index: 900;
   display: none;
 }
 
-.sidebar > ul > li ul li {
+.sidebar > ul > li ul li,
+.sidebar > ul > li ul li.a {
   display: block;
+  background-color: #608c48;
+  color: #fff;
   padding: 5px 10px;
-  z-index: 30;
-}
-
-.sidebar ul li a {
-  color: #ffffff;
-  text-decoration: none;
+  height: 1.4em;
+  z-index: 910;
+  cursor: pointer;
 }
 
 
 /*--positions the arrow image--*/
 
-.sidebar li span {
+.arrow:after {
+  display: inline-block;
+  font-family: "Fontello";
+  text-decoration: none;
   float: right;
-  height: 90%;
+  height: auto;
+}
+
+.sidebar li span:after {
+  content: '\e802';
+}
+
+.sidebar li:before {
+  content: "";
 }
 
 .logo-sidebar {
@@ -249,10 +251,7 @@ SIDEBAR
 
 .underside p {
   float: left;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1em;
+  font: 600 1em "proxima-nova-condensed", sans-serif;
   display: inline-block;
   width: 100px;
   margin-top: 20px;
@@ -271,7 +270,7 @@ SIDEBAR
 }
 
 
-/* =================
+/* =====
 CONTENT
 ============================================ */
 
@@ -281,29 +280,20 @@ CONTENT
 }
 
 .page-content-header {
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 1.8em;
-  font-weight: 700;
+  font: 700 1.8em "proxima-nova-condensed", sans-serif;
   padding-bottom: 1em;
   margin: 50px 20px 0 250px;
   width: 950px;
 }
 
 .page-content p {
-  font-family: "adelle", serif;
-  font-size: 1.1em;
-  line-height: 1.8em;
-  font-style: normal;
-  font-weight: 400;
+  font: 400 1.1em/1.8em "adelle", serif;
   padding-bottom: 1.6em;
   color: #6d645e;
 }
 
 .photo {
-  font-family: "adelle", serif;
-  font-style: italic;
-  font-size: 1.2em;
-  font-weight: 400;
+  font: italic 400 1.2em "adelle", "Georigia", serif;
   text-align: center;
   width: 286px;
   margin: 0 40px;
@@ -311,7 +301,7 @@ CONTENT
 }
 
 
-/* =================
+/* =====
 MEET THE FLOCK
 =============================================== */
 
@@ -329,8 +319,7 @@ MEET THE FLOCK
 .flock-container h3 {
   text-align: center;
   margin: 20px auto;
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 1.2em;
+  font: 1.2em "proxima-nova-condensed", sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #6d645e;
   max-width: 200px;
@@ -357,6 +346,10 @@ MEET THE FLOCK
   opacity: .85;
 }
 
+.picholder: hover .icon-hover {
+  background-color: #2b2b2b;
+}
+
 .overlay {
   bottom: 0;
   left: 0;
@@ -373,60 +366,27 @@ MEET THE FLOCK
 
 .flock-names {
   color: #608c48;
-  font-family: "proxima-nova-condensed", sans-serif;
+  font: 900 1.4em "proxima-nova-condensed", sans-serif;
   text-align: center;
-  font-size: 1.4em;
-  font-weight: 900;
   width: 170px;
   margin-top: 10px;
 }
 
 .flock-detail {
   color: #6d645e;
-  font-family: "adelle", serif;
-  font-style: italic;
-  font-weight: 400;
+  font: italic 400 1em "adelle", "Georgia", serif;
   text-align: center;
-  font-size: 1em;
   width: 170px;
   margin-bottom: 10px;
 }
 
 
-/*--rollover effect--*/
-
-
-/*span.roll {
-  background: center center no-repeat #999;
-  height: 173px;
-  position: absolute;
-  text-align: center;
-  line-height: 153px;
-  width: 173px;
-  border-radius: 100%;
-  border: 0 solid #ffffff;
-  z-index: 10;
-}
-
-.roll:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: inherit;
-  color: #ffffff;
-  font-size: 40px;
-  position: absolute;
-  top: 8px;
-  left: 67px;
-}*/
-
-
-/* ===================
+/* =====
 FOOTER
 ====================================================*/
 
 footer {
+  clear: right;
   width: 100%;
   margin: 0 auto;
   background-color: #47423d;
@@ -459,10 +419,7 @@ footer {
 }
 
 .tagline {
-  font-family: "adelle", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: .8em;
+  font: italic 400 0.8em "adelle", "Georgia", serif;
   color: white;
 }
 
@@ -471,28 +428,38 @@ footer {
   vertical-align: middle;
 }
 
-.icons a,
-a:hover {
-  color: #74b358;
-}
-
 .caddis {
   margin: 0 15px;
 }
 
+.caddis img {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+
 ul.social {
-  margin: 0;
-  margin-left: 0;
-  padding-left: 0;
+ /* margin: 10px;*/
+  /*margin-left: 0;*/
   list-style: none;
+  font-size: 16px;
 }
-
 ul.social li {
-  display: inline-block;
-  margin: 2px;
-  margin-top: -10px;
+    display: inline-block;
+  margin: 5px 5px 20px 5px;
+}
+ul.social li a {
+
+/* margin-top: -10px;*/
+  border-radius: 50%;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #608c48;
 }
 
-ul.social li a:hover span .fa-circle {
-  color: #2b2b2b;
+ul.social li a:hover {
+  background-color: #6d645e;
+  padding:8px;
+  border-radius: 50%;
 }

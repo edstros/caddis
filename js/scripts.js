@@ -1,7 +1,7 @@
   var $sticky = $('.sticky');
   var $win = $(window);
-  var $logcart = $('#logcart-icons');
-  var $searchwrap = $('#searchboxwrapper');
+  var $logcart = $('.logcart');
+  var $searchwrap = $('.searchboxwrapper');
   var $underside = $('.underside');
   var $undersearch = $('.undersearch');
 /*  var $roll = $('.roll');*/
@@ -36,13 +36,13 @@
           .appendTo($searchwrap)
           .css({
             margin: '10px',
-            paddingLeft: '45px'
+            paddingLeft: '35px'
           });
         $underside.slideUp();
         $undersearch.slideUp();
       } else {
         $logcart
-          .appendTo('#top-right')
+          .appendTo('.top-right')
           .fadeIn()
           .css({
             marginTop: 0,
@@ -50,7 +50,7 @@
             paddingLeft: 0
           });
         $searchwrap
-          .appendTo('#top-right')
+          .appendTo('.top-right')
           .css({
             margin: 0
           });
@@ -62,27 +62,9 @@
     /*==========================
     SIDEBAR MENU WITH JQUERY UI
     ============================ */
-    $("#menu").menu();
+    $(".menu").menu();
     $('ui-menu-item').css({
       borderTop: '1px solid #ccc'
     });
-    /*=============================
-    ROLLOVER EFFECT ON ROUND IMAGES
-    ===============================*/
-/*    // opacity of button set to 0%
-    $roll.css('opacity', '0');
-    // on mouse over
-    $roll.hover(function () {
-        // set opacity to 70%
-        $(this).stop().animate({
-          opacity: 0.7
-        }, 'fast');
-      },
-      // on mouse out
-      function () {
-        // set opacity back to 0%
-        $(this).stop().animate({
-          opacity: 0
-        }, 'slow');
-      });*/
+
   });
